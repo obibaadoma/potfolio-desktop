@@ -79,8 +79,8 @@ To get a local copy up and running follow these simple example steps.
 
   **Derek Akrasi Konadu**
        **David Leiva**
-       **Edith Oga**
        **Amaka Lawra Konwea**
+       **Bruno**
 
 ## 👥 Future Features <a name="authors"></a>
 [Javascript will be included for further interactivity]
