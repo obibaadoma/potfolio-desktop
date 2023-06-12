@@ -49,7 +49,7 @@ VS Code editor
 Setup
 Clone this repository to your desired folder:
 
-https://github.com/obibaadoma/potfolio-desktop.git
+https://obibaadoma.github.io/potfolio-desktop/
 
 Install
 Install this project with:
@@ -86,7 +86,7 @@ To get a local copy up and running follow these simple example steps.
 [Javascript will be included for further interactivity]
 
 
-- GitHub: [@githubhandle](https://github.com/obibaadoma/)
+- GitHub: [@githubhandle](https://obibaadoma.github.io/potfolio-desktop/)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/iderek-akrasi-konadu-187453151/)
 
 - GitHub: [@githubhandle](https://www.linkedin.com/in/derek-akrasi-konadu-187453151)
