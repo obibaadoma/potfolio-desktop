@@ -1,21 +1,23 @@
-const hamburger = document.querySelector('.hamburger');
-const mainlinks = document.querySelector('#links-nav');
-const listpopup = document.querySelectorAll('.menu-list');
-const closebutton = document.querySelector('.x-button');
+const menu = document.querySelector('.hamburger');
+const pop = document.querySelector('.pop-menu');
 
-function openwindow() {
-  mainlinks.classList.replace('links', 'links-menu');
+function poping() {
+  if (pop.style.display === 'block') {
+    menu.src = 'img/icon-hamburger.png';
+    pop.style.display = 'none';
+  } else {
+    menu.src = 'img/close-button.png';
+    pop.style.display = 'block';
+  }
 }
 
-function closewindow() {
-  mainlinks.classList.replace('links-menu', 'links');
-}
+menu.addEventListener('click', poping);
 
-hamburger.addEventListener('click', openwindow);
-closebutton.addEventListener('click', closewindow);
-
-for (let i = 0; i < listpopup.length; i += 1) {
-  listpopup[i].addEventListener('click', closewindow);
+const menus = document.querySelectorAll('.pop-menu a');
+for (let i = 0; i < menus.length; i += 1) {
+  menus[i].addEventListener('click', () => {
+    poping();
+  });
 }
 
 // popup generator
@@ -112,12 +114,14 @@ const generateproject = () => {
     tags.classList.add('tags');
     work.technologies.forEach((tech) => {
       const li = document.createElement('li');
-      li.innerHTML = tech;
+      const a = document.createElement('a');
+      a.innerHTML = tech;
+      li.appendChild(a);
       tags.appendChild(li);
     });
     content.appendChild(tags);
     const button = document.createElement('button');
-    button.classList.add('main-button');
+    button.classList.add('main-buttons');
     button.innerHTML = 'See Project';
     button.type = 'button';
     content.appendChild(button);
