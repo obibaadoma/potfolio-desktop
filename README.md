@@ -60,7 +60,7 @@ VS Code, downloading repo.
 ## 🛠 Built With <a name="built-with"></a>
 
 - HTML & CSS
-- Git, Github and Visual Studio Code
+- Git, Github and Visual Studio Code.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
