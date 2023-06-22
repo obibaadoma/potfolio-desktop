@@ -1,9 +1,9 @@
 const menu = document.querySelector('.hamburger');
 const pop = document.querySelector('.pop-menu');
-//most part of the time you need to declare your variables at the top of the document
-//By doing this practice you can avoid execution errors and reach all the variables
+// most part of the time you need to declare your variables at the top of the document
+// By doing this practice you can avoid execution errors and reach all the variables
 
-// I see that you tried to find an element with this class, but doesn't exist in HTML Doc, try to fix this problem 
+// I see that you tried to find an element with this class, but doesn't exist in HTML Doc, try to fix this problem
 const popup = document.querySelector('.overlay');
 const closePopup = document.querySelector('#closebtn');
 const subDesc = document.querySelector('#popsubdesc');
