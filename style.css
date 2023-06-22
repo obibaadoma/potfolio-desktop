@@ -454,7 +454,6 @@ form {
 
 /* Desktop Support */
 @media (min-width: 768px) {
-
   /* Navigation Bar */
   nav {
     height: 10vh;
@@ -597,4 +596,125 @@ form {
   .button-form {
     align-self: center;
   }
+}
+
+/* pop css */
+
+.pop-bottom p {
+  width: 70%;
+  margin-top: 4%;
+  margin-bottom: 10%;
+}
+
+.pop-card .desc p {
+  font-size: 1.2rem;
+}
+
+.pop-bottom {
+  display: inline-flex;
+  gap: 3%;
+}
+
+.pop-side {
+  margin-top: 4%;
+}
+
+.workimage {
+  display: none;
+}
+
+.deskimg {
+  display: block;
+  width: 100%;
+  transition: all 2s;
+}
+
+.deskimg:hover {
+  transform: scale(130%);
+}
+
+.pop-card .deskimg {
+  max-height: 30rem;
+}
+
+.pop-card .deskimg:hover {
+  transform: none;
+}
+
+.alt {
+  display: grid;
+  direction: rtl;
+}
+
+.worktext {
+  direction: ltr;
+  margin: 5% 5% 0% 5%;
+}
+
+.worktext h2 {
+  font-size: 2.5rem;
+}
+
+.desc {
+  margin: 2.5% 0;
+  font-size: 1.5rem;
+  gap: 3%;
+}
+
+.desc img {
+  width: 2%;
+}
+
+.descA,
+.grey {
+  margin: 0;
+  font-weight: 500;
+}
+
+.workdesc {
+  color: #344563;
+  font-size: 1.25rem;
+}
+
+.langs {
+  font-size: 1rem;
+}
+
+.langs li {
+  padding: 1% 2%;
+}
+
+.see-project {
+  font-size: 1.5rem;
+  padding: 2%;
+  border-radius: 0.9rem;
+}
+
+#about {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 5%;
+  margin-top: 10%;
+  border-radius: 0 10rem 0 0;
+}
+
+.outro {
+  margin: 20% 0 0 30%;
+}
+
+.outro-in {
+  margin: 7% 20% 0 0;
+}
+
+.outro-head {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.olinks img {
+  width: 1.8rem;
+}
+
+.skills li {
+  margin: 5% 0;
 }
