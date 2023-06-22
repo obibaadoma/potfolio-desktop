@@ -3,7 +3,8 @@ const pop = document.querySelector('.pop-menu');
 // most part of the time you need to declare your variables at the top of the document
 // By doing this practice you can avoid execution errors and reach all the variables
 
-// I see that you tried to find an element with this class, but doesn't exist in HTML Doc, try to fix this problem
+// I see that you tried to find an element with this
+//  class, but doesn't exist in HTML Doc, try to fix this problem
 const popup = document.querySelector('.overlay');
 const closePopup = document.querySelector('#closebtn');
 const subDesc = document.querySelector('#popsubdesc');
@@ -104,24 +105,24 @@ const project = [{
 
 const generatePopup = (index) => {
   skillsDiv.innerHTML = '';
-  popupTitle.innerText = projects[index].name;
-  workImg.src = projects[index].mobileImage;
-  deskImg.src = projects[index].desktopImage;
-  workDesc.innerText = projects[index].description;
-  projects[index].technologies.forEach((skill) => {
+  popupTitle.innerText = project[index].name;
+  workImg.src = project[index].mobileImage;
+  deskImg.src = project[index].desktopImage;
+  workDesc.innerText = project[index].description;
+  project[index].technologies.forEach((skill) => {
     const li = document.createElement('li');
     li.innerText = skill;
     skillsDiv.appendChild(li);
   });
   subDesc.innerHTML = `
-  <p class="descA">${projects[index].company}</p>
+  <p class="descA">${project[index].company}</p>
   <img src="./images/Counter.svg" alt="counter">
-  <p class="grey">${projects[index].stack}</p>
+  <p class="grey">${project[index].stack}</p>
   <img src="./images/Counter.svg" alt="counter">
-  <p class="grey">${projects[index].year}</p>
+  <p class="grey">${project[index].year}</p>
   `;
-  liveBtn.href = projects[index].liveVersionLink;
-  sourceBtn.href = projects[index].SourceLink;
+  liveBtn.href = project[index].liveVersionLink;
+  sourceBtn.href = project[index].SourceLink;
 };
 
 const windowPop = (index) => {
