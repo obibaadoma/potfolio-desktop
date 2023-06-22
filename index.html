@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <title>potfolio-desktop</title>
+</head>
+
+<body>
+
+  <!-- Main navigation bar or toolbar -->
+  <header>
+    <div>
+      <ul class="pop-menu">
+        <li><a href="#Portfolio">Portfolio</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </div>
+    <nav>
+      <div class="logo"><a href="#">My Logo</a></div>
+      <div class="menu-nav">
+        <button class="hamburger" type="button"><img src="img/icon-hamburger.png" alt="Menu icon"></button>
+        <ul class="links">
+          <li><a href="#Portfolio">Portfolio</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Headline Section -->
+  <section class="headline">
+    <h1>I’m Derek.<br>Glad to see you!</h1>
+    <p>I’m a software developer! I can help you build a product , feature or website Look through some of my work and
+      experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
+    <a class="connect">LET'S CONNECT</a>
+    <ul class="social-links">
+      <li><a href="https://twitter.com/obibaadoma"><img src="img/twitter-icon.png" alt="Twitter icon"
+            class="icon" /></a></li>
+      <li><a href="https://www.linkedin.com/in/iderek-akrasi-konadu-187453151/"><img src="img/linkedin-icon.png"
+            alt="LinkedIn icon" class="icon" /></a></li>
+      <li><a><img src="img/medium-icon.png" alt="Medium icon" class="icon" /></a></li>
+      <li><a href="https://github.com/obibaadoma"><img src="img/github-icon.png" alt="GitHub icon" class="icon" /></a>
+      </li>
+      <li><a><img src="img/angelist-icon.png" alt="Angelist icon" class="icon" /></a></li>
+    </ul>
+  </section>
+
+  <!-- Projects/Works Card Section -->
+  <section class="projects" id="Portfolio">
+
+  </section>
+
+  <!-- About Myself Section -->
+  <section class="about-myself" id="About">
+    <div class="content-about-myself">
+      <h2>About Myself</h2>
+      <p>Hello I’m a software developer! I can help you build a product , feature or website. Look through some of my
+        work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.
+      </p>
+      <a class="connect">LET'S CONNECT</a>
+      <ul class="social-links">
+        <li><a href="https://twitter.com/obibaadoma"><img src="img/twitter-icon.png" alt="Twitter icon"
+              class="icon" /></a></li>
+        <li><a href="https://www.linkedin.com/in/iderek-akrasi-konadu-187453151/"><img src="img/linkedin-icon.png"
+              alt="LinkedIn icon" class="icon" /></a></li>
+        <li><a><img src="img/medium-icon.png" alt="Medium icon" class="icon" /></a></li>
+        <li><a href="https://github.com/obibaadoma"><img src="img/github-icon.png" alt="GitHub icon" class="icon" /></a>
+        </li>
+        <li><a><img src="img/angelist-icon.png" alt="Angelist icon" class="icon" /></a></li>
+      </ul>
+      <button class="main-buttons">Get my resume</button>
+    </div>
+    <ul class="about-myself-ul">
+      <li class="dropdowns" id="open">
+        <a>Languages</a>
+        <button><img src="img/dropdown-open.png" alt="Dropdown button"></button>
+      </li>
+      <li>
+        <ul class="languages-ul">
+          <li class="languages" id="js">JavaScript</li>
+          <li class="languages" id="html">HTML</li>
+          <li class="languages" id="css">CSS</li>
+        </ul>
+      </li>
+      <li class="dropdowns">
+        <a>Frameworks</a>
+        <button><img src="img/dropdown-close.png" alt="Dropdown button"></button>
+      </li>
+      <li class="dropdowns">
+        <a>Skills</a>
+        <button><img src="img/dropdown-close.png" alt="Dropdown button"></button>
+      </li>
+    </ul>
+  </section>
+<!-- pop section -->
+
+<div class="pop-work">
+  <div class="pop-card">
+      <div class="pop-head">
+          <h2 id="poptitle"></h2>
+          <img src="./images/X-popup.svg" alt="close button" id="closebtn">
+      </div>
+
+      <div class="desc" id="popsubdesc">
+
+      </div>
+      <img src=".images/project-3.png" alt="" class="workimage" id="popMimg">
+      <img src=".images/project-1.png" alt="" class="deskimg" id="popDimg">
+  </div>
+  <div class="pop-bottom">
+      <p class="workdesc" id="popdesc">
+      </p>
+      <div class="pop-side">
+          <ul class="langs" id="poplangs">
+
+          </ul>
+          <div class="live-code">
+              <button type="button" class="btn lbtn" id="livebtn">See live<img
+                      src="./images/live-icon.svg" alt="live icon"></button>
+              <button type="button" class="btn sbtn">See source<img src="./images/code-icon.svg"
+                      alt="Github icon" id="codebtn"></button>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="overlay"></div>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="Contact">
+    <div class="contact-container">
+      <div class="form-container">
+        <h2>Contact me</h2>
+        <p>If you have an application you are interested in developing, a feature that you need built or a project that
+          needs coding.
+          I’d love to help with it!</p>
+        <form action="https://formspree.io/f/mbjevloq" id = "formValidation" method="POST">
+          <input type="text" class="input-container" placeholder="Enter name here" maxlength="30" name="fullname"
+            id="fullname" required>
+          <label class="labels" for="fullname">Full name</label>
+          <input type="email" class="input-container" placeholder="Enter email address" name="email" id="email"
+            required>
+          <small class="error"></small>  
+          <label class="labels" for="email">Email address</label>
+          <textarea type="text" class="input-container-2" placeholder="Kindly write meesage here" maxlength="500"
+            name="comment" id="comment" required></textarea>
+          <label class="labels" for="comment">Comment</label>
+          <button type="submit" id = "formValidate" class="button-form">Get in touch</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="index.js"></script>
+</body>
+
+</html>
