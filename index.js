@@ -190,3 +190,13 @@ const form = document.querySelector('#formValidation');
 
 const email = document.querySelector('#email');
 const mailError = document.querySelector('.error');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  mailError.innerHTML = '';
+  if (/[a-z]/.test(email.value) && /[A-Z]/.test(email.value)) {
+    mailError.innerText = 'Please a provide valid lowercase email address';
+  } else {
+    form.submit();
+  }
+});
