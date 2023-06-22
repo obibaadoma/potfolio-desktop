@@ -1,5 +1,21 @@
 const menu = document.querySelector('.hamburger');
 const pop = document.querySelector('.pop-menu');
+//most part of the time you need to declare your variables at the top of the document
+//By doing this practice you can avoid execution errors and reach all the variables
+
+// I see that you tried to find an element with this class, but doesn't exist in HTML Doc, try to fix this problem 
+const popup = document.querySelector('.overlay');
+const closePopup = document.querySelector('#closebtn');
+const subDesc = document.querySelector('#popsubdesc');
+const workImg = document.querySelector('#popMimg');
+const deskImg = document.querySelector('#popDimg');
+const popupTitle = document.querySelector('#poptitle');
+const popupContent = document.querySelector('.pop-work');
+const skillsDiv = document.querySelector('#poplangs');
+const workDesc = document.querySelector('#popdesc');
+const liveBtn = document.querySelector('#livebtn');
+const sourceBtn = document.querySelector('#codebtn');
+const Portfolio = document.querySelector('#Portfolio');
 
 function poping() {
   if (pop.style.display === 'block') {
@@ -85,28 +101,6 @@ const project = [{
   year: '2018',
   stack: 'Lead Developer',
 }];
-const windowPop = (index) => {
-  popupContent.style.display = 'block';
-  popup.style.display = 'block';
-  generatePopup(index);
-};
-
-closePopup.addEventListener('click', () => {
-  popupContent.style.display = 'none';
-  popup.style.display = 'none';
-});
-
-const popup = document.querySelector('.overlay');
-const closePopup = document.querySelector('#closebtn');
-const subDesc = document.querySelector('#popsubdesc');
-const workImg = document.querySelector('#popMimg');
-const deskImg = document.querySelector('#popDimg');
-const popupTitle = document.querySelector('#poptitle');
-const popupContent = document.querySelector('.pop-work');
-const skillsDiv = document.querySelector('#poplangs');
-const workDesc = document.querySelector('#popdesc');
-const liveBtn = document.querySelector('#livebtn');
-const sourceBtn = document.querySelector('#codebtn');
 
 const generatePopup = (index) => {
   skillsDiv.innerHTML = '';
@@ -130,7 +124,12 @@ const generatePopup = (index) => {
   sourceBtn.href = projects[index].SourceLink;
 };
 
-const Portfolio = document.querySelector('#Portfolio');
+const windowPop = (index) => {
+  popupContent.style.display = 'block';
+  popup.style.display = 'block';
+  generatePopup(index);
+};
+
 const generateproject = () => {
   project.forEach((work, index) => {
     const cards = document.createElement('div');
@@ -175,7 +174,12 @@ const generateproject = () => {
     Portfolio.appendChild(cards);
   });
 };
+
+closePopup.addEventListener('click', () => {
+  popupContent.style.display = 'none';
+  popup.style.display = 'none';
+});
+
 window.onload = () => {
   generateproject();
 };
-
