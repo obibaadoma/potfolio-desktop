@@ -184,3 +184,9 @@ closePopup.addEventListener('click', () => {
 window.onload = () => {
   generateproject();
 };
+
+// form validation
+const form = document.querySelector('#formValidation');
+
+const email = document.querySelector('#email');
+const mailError = document.querySelector('.error');
